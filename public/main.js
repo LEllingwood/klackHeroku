@@ -1,3 +1,4 @@
+// client
 const userList = document.getElementById("users");
 const messagesDiv = document.getElementById("messageslist");
 const textarea = document.getElementById("newmessage");
@@ -68,7 +69,7 @@ function fetchMessages() {
     });
 }
 
-document.getElementById("newmessage").addEventListener("keypress", event => {
+textarea.addEventListener("keypress", event => {
   // if the key pressed was enter (and not shift enter), post the message.
   if (event.keyCode === 13 && !event.shiftKey) {
     textarea.disabled = true;

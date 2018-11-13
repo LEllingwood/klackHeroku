@@ -3,7 +3,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 const mongoose = require("mongoose");
 const db = mongoose.connection;
-mongoose.connect("mongodb://leaellingwood:Patraeus14!@ds249123.mlab.com:49123/klack")
+mongoose.connect("mongodb://LEllingwood:Patraeus14!@ds151853.mlab.com:51853/klack")
 let users = {}
 
 db.on("error", console.error.bind(console, "Connection Error"));
